@@ -1,0 +1,5 @@
+1) It will be rejected due to foreign key constraints
+	The error will be: #1451 - Cannot delete or update a parent row: a foreign key constraint fails (`company`.`department`, CONSTRAINT `department_ibfk_1` FOREIGN KEY (`mgr_ssn`) REFERENCES `employee` (`ssn`))
+2) It can't be added due to foreign key constraints
+	the error will be: #1452 - Cannot add or update a child row: a foreign key constraint fails (`company`.`employee`, CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`Dno`) REFERENCES `department` (`Dnumber`))
+3) There's no way to insert them.
